@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olimpo Lab - Ingeniería y Desarrollo</title>
+
+  <!-- Tipografía moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Script (defer para cargar después del DOM) -->
+  <script src="js.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header animate__animated animate__fadeInDown">
+    <div class="container header-inner">
+      <div class="logo">Olimpo Lab</div>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- CARRUSEL / HERO -->
+  <section id="carrusel" class="hero-section">
+    <div class="carousel">
+      <!-- Inner wrapper para centrar y limitar ancho a 1200px (banner 1200x500) -->
+      <div class="carousel-inner">
+        <div class="slide active">
+          <img src="img/jpg2.jpg" alt="Olimpo Lab - innovación">
+        </div>
+        <div class="slide">
+          <img src="img/pxfuel.jpg" alt="Soluciones tecnológicas">
+        </div>
+        <div class="slide">
+          <img src="img/3.jpg" alt="Desarrollo web">
+        </div>
+        <div class="slide">
+          <img src="img/4.jpg" alt="Soporte técnico">
+        </div>
+        <div class="slide">
+          <img src="img/5.jpg" alt="Ciberseguridad">
+        </div>
+
+        <div class="hero-caption animate__animated animate__fadeInUp">
+          <h1>Olimpo Lab</h1>
+          <p>Ingeniería e innovación: desarrollo web, soluciones tecnológicas y ciberseguridad</p>
+        </div>
+
+        <button class="prev" aria-label="Anterior">&#10094;</button>
+        <button class="next" aria-label="Siguiente">&#10095;</button>
+      </div>
+
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  
+<section id="nosotros" class="section container">
+  <h2 class="section-title" data-aos="fade-down">Sobre Olimpo Lab</h2>
+  <div class="nosotros-grid">
+    
+    <!-- Texto con animación -->
+    <div class="nosotros-texto" data-aos="fade-right" data-aos-delay="100">
+      <p><strong>En <span class="brand">Olimpo Lab</span></strong> nos especializamos en ofrecer soluciones integrales en informática...</p>
+      <p>Nuestro equipo de ingenieros y técnicos está comprometido...</p>
+      <p>La seguridad y la protección de la información son pilares fundamentales...</p>
+      <p>Nuestra misión es potenciar negocios y usuarios...</p>
+      <p>Creemos en la innovación constante...</p>
+    </div>
+
+    <!-- Imagen con animación -->
+    <div class="nosotros-imagen" data-aos="zoom-in" data-aos-delay="300">
+      <img src="img/servisios/9.jpg" alt="Equipo Olimpo Lab">
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICIOS -->
+  <!-- SERVICIOS -->
+<section id="servicios" class="section section-gray container">
+  <h2 class="section-title" data-aos="fade-up">Portafolio de Servicios</h2>
+  <div class="cards-grid">
+    
+    <!-- Servicio 1 -->
+    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="img/servisios/1.jpg" alt="Soluciones Web y Digitales">
+      <div class="card-body">
+        <h3>Soluciones Web y Digitales</h3>
+        <ul>
+          <li>Creación de páginas web básicas (HTML, CSS y JS).</li>
+          <li>Personalización de plantillas web.</li>
+          <li>Implementación de páginas responsivas y optimizadas.</li>
+          <li>Optimización SEO y carga rápida.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 2 -->
+    <article class="service-card" data-aos="flip-left" data-aos-delay="200">
+      <img src="img/servisios/2.jpg" alt="Redes y Seguridad">
+      <div class="card-body">
+        <h3>Redes y Seguridad</h3>
+        <ul>
+          <li>Instalación y configuración de redes LAN y WiFi.</li>
+          <li>Soporte y mantenimiento de redes empresariales.</li>
+          <li>Seguridad informática y ciberseguridad.</li>
+          <li>Implementación de cortafuegos y respaldos.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 3 -->
+    <article class="service-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="img/servisios/3.jpg" alt="Soporte Técnico">
+      <div class="card-body">
+        <h3>Soporte Técnico</h3>
+        <ul>
+          <li>Diagnóstico y reparación de equipos de cómputo.</li>
+          <li>Mantenimiento preventivo y correctivo.</li>
+          <li>Instalación de software y sistemas operativos.</li>
+          <li>Recuperación de datos y eliminación de virus.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 4 -->
+    <article class="service-card" data-aos="fade-right" data-aos-delay="400">
+      <img src="img/servisios/4.jpg" alt="Consultoría en TI">
+      <div class="card-body">
+        <h3>Consultoría en TI</h3>
+        <ul>
+          <li>Asesoría en infraestructura tecnológica.</li>
+          <li>Diseño de planes de seguridad informática.</li>
+          <li>Optimización de procesos tecnológicos.</li>
+          <li>Capacitación en herramientas digitales.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 5 -->
+    <article class="service-card" data-aos="fade-left" data-aos-delay="500">
+      <img src="img/servisios/5.jpg" alt="Desarrollo de Software">
+      <div class="card-body">
+        <h3>Desarrollo de Software</h3>
+        <ul>
+          <li>Aplicaciones a medida según tus necesidades.</li>
+          <li>Sistemas de gestión empresarial.</li>
+          <li>Automatización de procesos administrativos.</li>
+          <li>Integración con bases de datos y APIs.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 6 -->
+    <article class="service-card" data-aos="zoom-in-up" data-aos-delay="600">
+      <img src="img/servisios/6.jpg" alt="Automatización y Domótica">
+      <div class="card-body">
+        <h3>Automatización y Domótica</h3>
+        <ul>
+          <li>Integración de dispositivos inteligentes.</li>
+          <li>Control de iluminación, climatización y seguridad.</li>
+          <li>Monitoreo remoto de sistemas del hogar u oficina.</li>
+          <li>Asesoría en dispositivos IoT.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 7 -->
+    <article class="service-card" data-aos="fade-up" data-aos-delay="700">
+      <img src="img/servisios/7.jpg" alt="Ciberseguridad y Backup">
+      <div class="card-body">
+        <h3>Ciberseguridad y Backup</h3>
+        <ul>
+          <li>Protección contra amenazas informáticas.</li>
+          <li>Gestión de accesos y contraseñas seguras.</li>
+          <li>Planes de respaldo y recuperación de datos.</li>
+          <li>Monitoreo de vulnerabilidades.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Servicio 8 -->
+    <article class="service-card" data-aos="flip-right" data-aos-delay="800">
+      <img src="img/servisios/8.jpg" alt="Capacitación y Asesoría">
+      <div class="card-body">
+        <h3>Capacitación y Asesoría</h3>
+        <ul>
+          <li>Capacitación en herramientas tecnológicas.</li>
+          <li>Formación en ciberseguridad y buenas prácticas.</li>
+          <li>Entrenamiento en programación básica.</li>
+          <li>Consultoría personalizada en proyectos digitales.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section container" data-aos="fade-up">
+    <h2 class="section-title">Contáctanos</h2>
+    <p class="intro">¿Tienes algún proyecto en mente o deseas uno de nuestros servicios? Completa el formulario y nuestro equipo se pondrá en contacto.</p>
+
+    <form id="form-contacto" class="contact-form" action="#" method="POST" novalidate>
+      <div class="form-row">
+        <label for="nombre"><i class="fas fa-user"></i> Nombre Completo</label>
+        <input id="nombre" name="nombre" type="text" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="servicio"><i class="fas fa-cogs"></i> Sección de Servicio que te Interesa</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Selecciona una opción</option>
+          <option value="soluciones-web">Soluciones Web</option>
+          <option value="redes-seguridad">Redes y Seguridad</option>
+          <option value="multimedia">Edición Multimedia</option>
+          <option value="soporte">Soporte Técnico</option>
+          <option value="servicio-pc">Servicio Técnico PC</option>
+          <option value="servicio-celular">Servicio Técnico Celulares</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="mensaje"><i class="fas fa-comment"></i> Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="site-footer" data-aos="fade-up">
+    <div class="container footer-inner">
+      <div class="footer-contact">
+        <h3>Olimpo Lab</h3>
+        <p>Somos una empresa dedicada a servicios de ingeniería, desarrollo web, seguridad informática y soporte técnico.</p>
+        <p><i class="fas fa-map-marker-alt"></i> Montería, Córdoba, Colombia</p>
+        <p><i class="fas fa-phone"></i> +57 323 588 2174</p>
+        <p><i class="fas fa-envelope"></i> contacto@olimpolab.com</p>
+
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-map">
+        <!-- Mapa de Montería, ancho 700 x alto 400 (responsive con max-width) -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.234136919844!2d-75.87910808462403!3d8.758013394370278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eab404c80c0a9df%3A0x3c2b053db2e0a2f9!2sMonter%C3%ADa%2C%20C%C3%B3rdoba%2C%20Colombia!5e0!3m2!1ses-419!2sco!4v1694333333333!5m2!1ses-419!2sco"
+          width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Olimpo Lab. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- AOS script e inicialización -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 900,   // duración de animaciones en ms
+    once: false,     // animar cada vez que entres a la sección
+    mirror: true,    // también cuando vuelvas a subir
+    disable: false   // habilitado en celular
+  });
+</script>
+
+  <!-- Botón subir arriba -->
+<button id="btn-top" aria-label="Subir al inicio">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
